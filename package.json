@@ -20,6 +20,7 @@
     "wkhtmltopdf",
     "html2pdf",
     "html-to-pdf",
+    "convert-html-to-pdf",
     "pdf-from-html",
     "node",
     "nodejs",
@@ -28,9 +29,9 @@
     "ts",
     "js"
   ],
-  "homepage": "https://github.com/alextiley/html-to-pdf",
-  "repository": "https://github.com/alextiley/html-to-pdf",
-  "bugs": "https://github.com/alextiley/html-to-pdf/issues",
+  "homepage": "https://github.com/alextiley/convert-html-to-pdf",
+  "repository": "https://github.com/alextiley/convert-html-to-pdf",
+  "bugs": "https://github.com/alextiley/convert-html-to-pdf/issues",
   "scripts": {
     "build": "rimraf ./lib; tsc -p tsconfig.build.json",
     "prepublishOnly": "yarn build",
