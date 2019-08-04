@@ -1,5 +1,5 @@
 {
-  "name": "html-to-pdf",
+  "name": "convert-html-to-pdf",
   "description": "Convert HTML to PDF in node.js",
   "version": "1.0.0",
   "main": "./lib/index.js",
