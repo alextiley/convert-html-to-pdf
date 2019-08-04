@@ -1,7 +1,7 @@
 {
   "name": "convert-html-to-pdf",
   "description": "Convert HTML to PDF in node.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "license": "MIT",
