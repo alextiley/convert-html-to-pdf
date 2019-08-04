@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "./lib"
+  },
+  "exclude": [
+    "**/__mocks__/*",
+    "**/__fixtures__/*",
+    "**/__tests__/*",
+    "**/examples/*"
+  ],
+  "extends": "./tsconfig.json"
+}

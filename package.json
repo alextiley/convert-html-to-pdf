@@ -1,0 +1,69 @@
+{
+  "name": "html-to-pdf",
+  "description": "Convert HTML to PDF in node.js",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "license": "MIT",
+  "authors": [
+    "Alex Tiley <alex@tiley.io>"
+  ],
+  "keywords": [
+    "convert",
+    "pdf",
+    "html",
+    "pdf-generator",
+    "pdf-conversion",
+    "pdf-creator",
+    "pdf-builder",
+    "puppeteer",
+    "wkhtmltopdf",
+    "html2pdf",
+    "html-to-pdf",
+    "pdf-from-html",
+    "node",
+    "nodejs",
+    "javascript",
+    "typescript",
+    "ts",
+    "js"
+  ],
+  "homepage": "https://github.com/alextiley/html-to-pdf",
+  "repository": "https://github.com/alextiley/html-to-pdf",
+  "bugs": "https://github.com/alextiley/html-to-pdf/issues",
+  "scripts": {
+    "build": "rimraf ./lib; tsc -p tsconfig.build.json",
+    "prepublishOnly": "yarn build",
+    "start": "tsnd --respawn --transpile-only examples/index.ts",
+    "test": "jest"
+  },
+  "files": [
+    "/lib"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/lodash": "^4.14.136",
+    "@types/node": "^12.6.8",
+    "@types/puppeteer": "^1.19.0",
+    "jest": "^24.8.0",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "ts-node-dev": "^1.0.0-pre.40",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "puppeteer": "^1.19.0"
+  },
+  "jest": {
+    "clearMocks": true,
+    "resetModules": true,
+    "restoreMocks": true,
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.ts?$": "ts-jest"
+    }
+  }
+}
