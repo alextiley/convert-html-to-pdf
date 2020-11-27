@@ -20,6 +20,11 @@ export interface HTMLToPDFOptions {
    * @default false
    */
   waitForNetworkIdle?: boolean;
+  
+  /**
+  * Delays render
+  */
+  delayRenderInMs?: number;
 }
 
 /**
