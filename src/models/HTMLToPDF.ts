@@ -51,7 +51,7 @@ export default class HTMLToPDF {
 
       try {
         const pdf = await new Promise(async (resolve, reject) => {
-            setTimeout(async () => resolve(await page.pdf(this._options.pdfOptions));, this._options.delayRenderInMs);
+            setTimeout(async () => resolve(await page.pdf(this._options.pdfOptions)), this._options.delayRenderInMs);
         });
         
         await browser.close();
