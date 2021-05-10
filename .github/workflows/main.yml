@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+
+name: ci 
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: Dependencies
+      run: yarn
+    - name: Test
+      run: yarn test
+    - name: Build
+      run: yarn build
