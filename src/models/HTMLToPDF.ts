@@ -8,7 +8,7 @@ export default class HTMLToPDF {
 
   private _options: HTMLToPDFOptions = {
     browserOptions: {
-      args: ['--font-render-hinting=none'],
+      args: ['--font-render-hinting=none', '--no-sandbox'],
     },
     pdfOptions: {
       printBackground: true,
