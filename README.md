@@ -15,7 +15,7 @@ For pointers on how to make puppeteer work in your environment, see https://gith
 
 This library exports a method allowing conversion of HTML to PDF. When invoked with a valid HTML template as the first argument, a Buffer is returned containing a PDF document, along with the `application/pdf` mime type. The second argument is a configuration object, allowing customisation of Puppeteer, or the output of the PDF.
 
- ```ecmascript 6
+ ```javascript
   const HTMLToPDF = require('convert-html-to-pdf').default;
 
   const htmlToPDF = new HTMLToPDF(`
@@ -33,7 +33,7 @@ This library exports a method allowing conversion of HTML to PDF. When invoked w
 
 Or, if using async await:
 
- ```ecmascript 6
+ ```javascript
   const HTMLToPDF = require('convert-html-to-pdf').default;
 
   const getPDF = async () => {
@@ -53,7 +53,7 @@ Or, if using async await:
 For PDF's that should contain imagery or web fonts, it's recommended to base 64 encode any assets and embed within the markup using a data URI. This will yield faster results. If you'd rather request assets over HTTP, you can do this by enabling the `waitForNetworkIdle` configuration option.
 
 ##### Example of an asset encoded as base 64
- ```ecmascript 6
+ ```javascript
    const HTMLToPDF = require('convert-html-to-pdf').default;
  
    const htmlToPDF = new HTMLToPDF(`
@@ -70,7 +70,7 @@ For PDF's that should contain imagery or web fonts, it's recommended to base 64 
 ```
 
 ##### Example of an asset loaded over HTTP
- ```ecmascript 6
+ ```javascript
   const HTMLToPDF = require('convert-html-to-pdf').default;
 
   const htmlToPDF = new HTMLToPDF(`
