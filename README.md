@@ -1,7 +1,10 @@
-# html-to-pdf
+ # [DEPRECATED]
+
+The convert-html-to-pdf project is no longer actively maintained, and users are advised that continued use may expose applications to unpatched security vulnerabilities. Recommended alternatives for HTML-to-PDF conversion include Puppeteer, Playwright, or client-side libraries like jsPDF. 
+
+## html-to-pdf
 
 A library for converting HTML with CSS to PDF.
-
 
 ### Dependencies
 
